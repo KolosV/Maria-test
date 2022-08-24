@@ -101,7 +101,6 @@
                 <p> 1 690 руб </p>
                 <p> 1 400 руб</p>
                 <p> 4 250 / 4 750 руб</p></li>
-                <script src="modal.js"></script>
         </ul>
         <a href="index.php" class="btn btn-pink1">Домашняя</a>
         <a href="admin.php" class="btn btn-pink2">Администратор</a>
