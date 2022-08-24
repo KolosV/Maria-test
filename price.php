@@ -109,7 +109,7 @@
         <a href="#" class="btn btn-pink3 hidden">Создать</a>
         <a href="#" class="btn btn-pink4 hidden">Выйти</a>
         <?php } ?>
-        <a href="#" class="btn btn5"><img src="img/onlayn-zapis.png"></a>
+        <a class="btn btn5"><img src="img/onlayn-zapis.png"></a>
        </div>
        <script src="modal.js"></script>
        <?php 
