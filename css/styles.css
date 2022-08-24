@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+  }
+body{
+    font-size: 32;
+    line-height: 17px;
+    font-family: 'Prociono';
+}
+ .back1 {
+    background-image: url("../img/coffee-cup-white-rose-flowers-white-table-background-to-breakfast-mothers-day-womens-day-top-view-copy-space-86439905.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo img {
+    position: absolute;
+    top: 5%;
+    left: 27%;
+    width: 449px;
+    height: 371px;
+}
+
+.saloon {
+    position: absolute;
+    width: 286px;
+    height: 46px;
+    left: 536px;
+    top: 313px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    
+    color: #000000;
+}
+
+.adress{
+position: absolute;
+width: 620px;
+height: 135px;
+left: 116px;
+top: 430px;
+
+font-family: 'Prociono';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+
+color: #000000;
+}
+
+.btn-pink{
+    display: run-in;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    width: 340px;
+    height: 50px;
+    left: 900px;
+    top: 450px;
+
+    padding: 10px 25px;
+    font-size: 50px;
+    vertical-align: top;
+
+    border: none;
+    border-radius: 50px;
+    color: #222;
+}
+.btn::after{
+    content:"";
+
+    position: absolute;
+    top: 40px;
+    right: 17px;
+
+    width: 19px;
+    height: 100px;
+}
+.btn-pink{
+    background-color: #EB8C8C;
+}
+
+.tablet img {
+    position: absolute;
+    top: 3%;
+    left: 16%;
+    width: 600px;
+    height: 600px;
+}
+
+.site-menu{
+    position: absolute;
+    width: 286px;
+    height: 46px;
+    left: 300px;
+    top: 100px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #000000;
+}
+
+.price {
+    position: absolute;
+    width: 286px;
+    height: 46px;
+    left: 650px;
+    top: 100px;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #000000;
+
+}
+.btn-pink1{
+    display: run-in;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    width: 340px;
+    height: 50px;
+    left: 900px;
+    top: 450px;
+
+    padding: 10px 25px;
+    font-size: 30px;
+    vertical-align: top;
+
+    border: none;
+    border-radius: 50px;
+    color: #222;
+    background-color: #EB8C8C;
+}
+.btn-pink2{
+    display: run-in;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    width: 340px;
+    height: 50px;
+    left: 900px;
+    top: 450px;
+
+    padding: 10px 25px;
+    font-size: 30px;
+    vertical-align: top;
+
+    border: none;
+    border-radius: 50px;
+    color: #222;
+    background-color: #EB8C8C;
+}
+
+.btn-pink4{
+    display: run-in;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    width: 340px;
+    height: 50px;
+    left: 480px;
+    top: 530px;
+
+    padding: 10px 25px;
+    font-size: 30px;
+    vertical-align: top;
+
+    border: none;
+    border-radius: 50px;
+    color: #222;
+    background-color: #EB8C8C;
+}
+
+.btn-pink3{
+    display: run-in;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    width: 340px;
+    height: 50px;
+    left: 480px;
+    top: 530px;
+
+    padding: 10px 25px;
+    font-size: 30px;
+    vertical-align: top;
+
+    border: none;
+    border-radius: 50px;
+    color: #222;
+    background-color: #EB8C8C;
+}
+.btn5 img{
+    position: absolute;
+    width: 259px;
+    height: 191px;
+    left: 950px;
+    top: 230px;
+}
+
+.btn-pink6{
+    display: run-in;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    width: 340px;
+    height: 50px;
+    left: 480px;
+    top: 50px;
+
+    padding: 10px 25px;
+    font-size: 30px;
+    vertical-align: top;
+
+    border: none;
+    border-radius: 50px;
+    color: #222;
+    background-color: #EB8C8C;
+}
+
+.btn-pink7{
+    
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    width: 340px;
+    height: 50px;
+    left: 480px;
+    top: 50px;
+
+    padding: 10px 25px;
+    font-size: 30px;
+    vertical-align: top;
+
+    border: none;
+    border-radius: 50px;
+    color: #222;
+    background-color: #EB8C8C;
+}
+.modal {
+    height: 100%;
+    width: 100%;
+    background-color: #1c1c1ca3;
+    position:fixed;
+    top:0;
+    left: 0;
+   
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 99;
+ }
+
+ .modal_opened {
+    display: flex; 
+ }
+ 
+ 
+ .modal_body {
+    background-color: rgb(230, 232, 235);
+    padding: 20px; 
+    border-radius: 20px;
+ }
+ 
+ .modal_close {
+    justify-content:flex-end; 
+ }
+ 
+ .modal_content {
+    padding: 10px 40px; 
+ }
+ 
+ .modal_content h2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center; 
+ }
+ 
+ 
+ .form_block {
+    display: flex;
+    width: 90%;
+    gap: 25px;
+    flex-direction: column;
+    margin-top: 10px; 
+    gap: 10px;
+ }
+
+ form {
+    margin-top: 15px;
+}
+  
+ form p {
+     font-size: 12px;
+     margin-left: 40px; 
+     flex-direction: column;
+}
+ 
+ form input[type=text], form button{
+    font-size: 18px;
+    padding: 25px 0;
+    padding-left: 20px;
+    width: 100%;
+    border-radius: 100px;
+    box-sizing: content-box;
+    border: none; 
+}
+ 
+ form button {
+    background-color: #EB8C8C;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover{
+    background-color: pink;
+}
+
+ .form_blockk {
+    display: flex;
+    width: 50%;
+    gap: 15px;
+    flex-direction: column;
+    padding-left: 35%;
+    margin-top: 120px; 
+
+ }
+  
+ .form1 p {
+     font-size: 12px;
+     margin-left: 60px; 
+     flex-direction: column;
+}
+ 
+ .form1 input[type=text], .form1 button{
+    font-size: 18px;
+    padding: 25px 0;
+    padding-left: 20px;
+    width: 50%;
+    border-radius: 50px;
+    box-sizing: content-box;
+    border: none; 
+}
+ 
+.form1 button {
+    background-color: #EB8C8C;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form1 button:hover{
+    background-color: pink;
+}
