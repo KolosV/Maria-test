@@ -10,7 +10,7 @@
     $con = new Conn;
     include "core/auth.php";
     
-    $sql ="INSERT INTO `user` (`login`,`password`) VALUES (:name, :pass)";
+    $sql ="INSERT INTO `admin` (`login`,`password`) VALUES (:name, :pass)";
 
     
     $uri = $_SERVER["REQUEST_URI"];
@@ -35,11 +35,14 @@
         <div class="form1" id="form1">
             <div class="form_body">
                      <div class="form_blockk d-f">
-                        <input type="text" required placeholder="Логин">
-                        <input type="text" required placeholder="Пароль">                  
-                        <button type="submit">
-                           Отправить              
-                        </button>                                  
+                     <form method ="POST" name="authorization" class="header__form">
+                     <?php if(isset($_SESSION["isAuth"]) && $_SESSION["isAuth"]->isadmin == 1):?>
+                        <input type="text" required placeholder="Логин" name="login" type="text">
+                        <input type="text" required placeholder="Пароль" name="password" type="password">                  
+                        <button type="submit" name="comeIn" value="check"> Войти </button> 
+                        <?php endif; ?>
+                        <button type="submit" class="form-button" name="logout" value="check"> Выйти </button>
+                        </form>                        
                      </div>
                </div>      
             </div>
