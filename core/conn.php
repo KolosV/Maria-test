@@ -5,7 +5,7 @@ class Conn{
     public $connect;
     private $query;
     
-    protected $user ="Maria869696";
+    protected $user ="maria869696";
     protected $pass ="Hins&8H5";
     protected $charSet = "utf8";
     protected $option = array(
@@ -17,7 +17,7 @@ class Conn{
 
     public function __construct(){
         try {
-            $this->connect = new PDO('mysql:host=localhost;dbname=Maria869696;charset='.$this->charSet,$this->user,$this->pass,$this->option);
+            $this->connect = new PDO('mysql:host=localhost;dbname=maria869696;charset='.$this->charSet,$this->user,$this->pass,$this->option);
         } catch (PDOException $e) {
             //var_dump($e->getCode());
             var_dump($e->getMessage());
