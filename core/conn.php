@@ -5,7 +5,7 @@ class Conn{
     public $connect;
     private $query;
     
-    protected $user ="maria869696";
+    protected $user ="Maria869696";
     protected $pass ="Hins&8H5";
     protected $charSet = "utf8";
     protected $option = array(
