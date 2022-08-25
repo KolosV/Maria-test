@@ -9,18 +9,15 @@
     $ds = DIRECTORY_SEPARATOR;
     $con = new Conn;
     include "core/auth.php";
-    
-    $sql ="INSERT INTO `admin` (`login`,`password`) VALUES (:name, :pass)";
 
     
     $uri = $_SERVER["REQUEST_URI"];
     $uri = preg_replace("/\/Maria/","",$uri); // костыль для Xampp
-
     preg_match_all("/((?<=\?)|(?<=\/)|(?<=\&))\w+/",$uri,$urlParam);
     $urlParam = $urlParam[0];
     $uri = $urlParam[0];
-?>
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,13 +33,14 @@
             <div class="form_body">
                      <div class="form_blockk d-f">
                      <form method ="POST" name="authorization" class="header__form">
-                     <?php if(isset($_SESSION["isAuth"]) && $_SESSION["isAuth"]->isadmin == 1):?>
-                        <input type="text" required placeholder="Логин" name="login" type="text">
-                        <input type="text" required placeholder="Пароль" name="password" type="password">                  
+                        <input placeholder="Логин" name="login" type="text">
+                        <input type="text" placeholder="Пароль" name="password" type="password">                  
                         <button type="submit" name="comeIn" value="check"> Войти </button> 
-                        <?php endif; ?>
-                        <button type="submit" class="form-button" name="logout" value="check"> Выйти </button>
-                        </form>                        
+                        <?php if (!empty($_SESSION['auth'])): ?>
+                        <button class="form-button" name="logout" value="check">Выйти</button> 
+                        <?php endif; ?>                
+
+                        </form>  
                      </div>
                </div>      
             </div>

@@ -10,7 +10,7 @@
     $con = new Conn;
     include "core/auth.php";
     
-    $sql ="INSERT INTO `user` (`login`,`password`) VALUES (:name, :pass)";
+    $sql ="INSERT INTO `user` (`login`,`phone`) VALUES (:name, :phone)";
 
     
     $uri = $_SERVER["REQUEST_URI"];
@@ -44,8 +44,9 @@
                  <form action="/" method="get">  
                     
                     <div class="form_block d-f">
-                       <input type="text" required placeholder="Ваше имя">
-                       <input type="text" required placeholder="+7 ( _ _ _) _ _ - _ _ - _ _">                  
+
+                       <input type="text" required placeholder="Ваше имя" name="login">
+                       <input type="text" required placeholder="+7 ( _ _ _) _ _ - _ _ - _ _" name="phone">                  
                        <button type="submit">
                           Отправить              
                        </button>                  
@@ -104,10 +105,10 @@
         </ul>
         <a href="index.php" class="btn btn-pink1">Домашняя</a>
         <a href="admin.php" class="btn btn-pink2">Администратор</a>
-        <?php if(isset($_SESSION["isAuth"])){ ?>
+        <?php if (!empty($_SESSION['auth'])): ?>
         <a href="#" class="btn btn-pink3 hidden">Создать</a>
-        <a href="#" class="btn btn-pink4 hidden">Выйти</a>
-        <?php } ?>
+        <a href="#" name="logout" value="check" class="btn btn-pink4 hidden">Выйти</a>
+        <?php endif; ?>
         <a class="btn btn5"><img src="img/onlayn-zapis.png"></a>
        </div>
        <script src="modal.js"></script>
