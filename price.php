@@ -42,7 +42,7 @@
                  <h2> 
                     Позвоните мне
                  </h2>
-                 <form action="/" method="post">
+                 <form action="server.php" method="post">
  
                     
                     <div class="form_block d-f">
