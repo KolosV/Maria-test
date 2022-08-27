@@ -36,7 +36,7 @@
                         <input placeholder="Логин" name="login" type="text">
                         <input type="text" placeholder="Пароль" name="password" type="password">                  
                         <button type="submit" name="comeIn" value="check"> Войти </button> 
-                        <?php if (!empty($_SESSION['auth'])): ?>
+                        <?php if (!empty($_SESSION["isAuth"])): ?>
                         <button class="form-button" name="logout" value="check">Выйти</button> 
                         <?php endif; ?>                
 

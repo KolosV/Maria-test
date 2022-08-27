@@ -28,9 +28,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Prices</title>
+        <title>Prices</title>
 </head>
 <body>
+    
 
         <div class="modal" id="modal">
            <div class="modal_body">
@@ -41,12 +42,13 @@
                  <h2> 
                     Позвоните мне
                  </h2>
-                 <form action="/" method="get">  
+                 <form action="/" method="post">
+ 
                     
                     <div class="form_block d-f">
 
                        <input type="text" required placeholder="Ваше имя" name="login">
-                       <input type="text" required placeholder="+7 ( _ _ _) _ _ - _ _ - _ _" name="phone">                  
+                       <input type="text" required placeholder="+7 ( _ _ _) _ _ - _ _ - _ _" name="phone_number">                  
                        <button type="submit">
                           Отправить              
                        </button>                  
@@ -105,19 +107,14 @@
         </ul>
         <a href="index.php" class="btn btn-pink1">Домашняя</a>
         <a href="admin.php" class="btn btn-pink2">Администратор</a>
-        <?php if (!empty($_SESSION['auth'])): ?>
-        <a href="#" class="btn btn-pink3 hidden">Создать</a>
-        <a href="#" name="logout" value="check" class="btn btn-pink4 hidden">Выйти</a>
+        <?php if (!empty($_SESSION['isAuth'])): ?>
+        <button name="logout" value="check" class="btn btn-pink3">Создать</button>
+        <form method ="POST" name="logout">
+        <button name="logout" value="check" class="btn btn-pink3">Выйти</button>
+        </form>  
         <?php endif; ?>
         <a class="btn btn5"><img src="img/onlayn-zapis.png"></a>
        </div>
        <script src="modal.js"></script>
-       <?php 
-        
-    ?>
-    </main>
-    <aside class="attention" <?= isset($_SESSION["error"]) ? 'style="visibility: visible;"':''; ?>>
-        <p><?php if(isset($_SESSION["error"])) echo $_SESSION["error"]?></p>
-    </aside>
 </body>
 </html>

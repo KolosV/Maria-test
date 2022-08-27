@@ -1,14 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
 }
+
+
 body, html {
     height: 100%;
   }
+  
 body{
+    font-family: 'Prociono';
+    font-style: normal;
     font-size: 32;
     line-height: 17px;
-    font-family: 'Prociono';
 }
  .back1 {
     background-image: url("../img/coffee-cup-white-rose-flowers-white-table-background-to-breakfast-mothers-day-womens-day-top-view-copy-space-86439905.jpg");
@@ -74,16 +82,7 @@ color: #000000;
     border-radius: 50px;
     color: #222;
 }
-.btn::after{
-    content:"";
 
-    position: absolute;
-    top: 40px;
-    right: 17px;
-
-    width: 19px;
-    height: 100px;
-}
 .btn-pink{
     background-color: #EB8C8C;
 }
@@ -154,26 +153,6 @@ color: #000000;
     height: 50px;
     left: 900px;
     top: 450px;
-
-    padding: 10px 25px;
-    font-size: 30px;
-    vertical-align: top;
-
-    border: none;
-    border-radius: 50px;
-    color: #222;
-    background-color: #EB8C8C;
-}
-
-.btn-pink4{
-    display: run-in;
-    text-align: center;
-    text-decoration: none;
-    position: relative;
-    width: 340px;
-    height: 50px;
-    left: 480px;
-    top: 530px;
 
     padding: 10px 25px;
     font-size: 30px;

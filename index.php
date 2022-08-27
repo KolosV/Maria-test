@@ -16,9 +16,6 @@
     $uri = $_SERVER["REQUEST_URI"];
     $uri = preg_replace("/\/Maria/","",$uri); // костыль для Xampp
 
-    preg_match_all("/((?<=\?)|(?<=\/)|(?<=\&))\w+/",$uri,$urlParam);
-    $urlParam = $urlParam[0];
-    $uri = $urlParam[0];
 ?>
 
 <!DOCTYPE html>
